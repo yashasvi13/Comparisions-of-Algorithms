@@ -1,0 +1,105 @@
+\documentclass{beamer}
+
+\mode<presentation>
+{
+ 
+  \setbeamertemplate{items}[square]
+  \setbeamertemplate{footline}[page number]
+   \usetheme{PaloAlto}
+   \usecolortheme[named=violet]{structure}
+  \setbeamertemplate{navigation symbols}{}
+
+}
+
+
+\usepackage[english]{babel}
+\usepackage{subfig}
+\usepackage{palatino}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{positioning,chains,fit,shapes,calc,arrows,automata,shadows,trees,mindmap}
+
+\date{April 28, 2016}
+\title[Project]
+{
+IT Workshop Endsem Project
+}
+\author[Tayba Wasim, Yashasvi Jain]
+{Tayba Wasim(15UCS150) | Yashasvi Jain(15UEC077)}
+\institute[institute]
+{
+
+The LNMIIT Jaipur \hfill
+}
+
+\subject{}
+
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+\tikzstyle{every picture}+=[remember picture]
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Sorting}
+\begin{block}{Different Algorithms for Sorting}
+\begin{itemize}
+\item Bubble Sort
+\item Insertion Sort
+\item Merge Sort
+\item Quick Sort
+\item Selection Sort
+\end{itemize}
+\end{block}
+\begin{block}{Bubble Sort}
+Bubble Sort works by repeatedly stepping through lists that
+need to be sorted, comparing each pair of adjacent items
+and swapping them if they are in the wrong order.
+\end{block}
+\end{frame}
+\begin{frame}
+\begin{block}{Insertion Sort}
+Insertion Sort inserts each item into its proper place in the
+final list.The simplest implementation of this requires 2
+list structures,the source list and the list in which sorted items are inserted.
+\end{block}
+\begin{block}{Merge Sort}
+Merge Sort splits the list to be sorted into two equal halves
+and places them in separate arays.Each array is recursively
+sorted and then merged back together to get the final sorted
+list.
+\end{block}
+\begin{block}{Quick Sort}
+Quick Sort is an in-place, divide and conquer, massively
+recursvie sort. It is essentially in-place version of the merge
+sort.
+\end{block}
+\end{frame}
+\begin{frame}
+\begin{block}{Selection Sort}
+Selection Sort is an in-place comparison sort.It is inefficient
+on large lists and generally performs worse than similar
+insertion sort.
+\end{block}
+\begin{block}{Which is the best Sorting algorithm?}
+We cannot generalize the order but according to the GNU plot, we can say, Bubble Sort is best for sorting small data while Merge Sort is best for large data.
+\end{block}
+\end{frame}
+\end{document}
+
+
+\grid
+\grid
